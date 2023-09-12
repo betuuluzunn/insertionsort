@@ -26,6 +26,22 @@ Best case: The number we are looking for is at the beginning of the array.
 + [7,3,5,8,2,9,4,15,6]
 + [2,3,5,8,7,9,4,15,6]
 + [2,3,4,8,7,9,5,15,6]
-+ [2,3,4,5,7,9,8,15,6]
++ [2,3,4,5,7,9,8,15,6] 
 
 
+
+# Merge Sort Project
+[16,21,11,8,12,22] -> Merge Sort
+
+Write the stages of the above sequence according to the sort type.
+Write the Big-O notation.
+
++ [16,21,11,8,12,22]
++ [16,21,11] , [8,12,22]
++ [16,21] [11] , [8,12] [22]
++ [16] [21] [11] , [8] [12] [22] 
++ [16,21] [11] , [8,12] , [22]
++ [11,16,21] , [8,12,22]
++ [8,11,12,16,21,22]
+
+Big o = 2^x = n , logn=x , O(nlogn)
